@@ -108,6 +108,6 @@ public class UserController {
     }
 
     private ResponseEntity<Map<String, Object>> fallbackMethodGetAll(@PathVariable("userId") int userId, RuntimeException e) {
-        return new ResponseEntity("El usuario" + userId + " tiene los vehiculos en el taller", HttpStatus.OK);
+        return new ResponseEntity("El usuario " + userId + " tiene los vehiculos en el taller", HttpStatus.OK);
     }
 }
